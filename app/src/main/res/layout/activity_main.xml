@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgOA"
+    android:layout_height="match_parent"
+    tools:context="com.gelves.uriel.easycalc.MainActivity">
+
+
+    <EditText
+        android:id="@+id/numA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/boxA"
+        android:ems="15"
+        android:inputType="number"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/numB"
+        android:hint="@string/boxB"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/numA"
+        android:layout_alignLeft="@+id/numA"
+        android:layout_alignStart="@+id/numA"
+        android:layout_alignRight="@+id/numA"
+        android:layout_alignEnd="@+id/numA" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@color/result"
+        android:layout_below="@+id/numB"
+        android:layout_alignLeft="@+id/numB"
+        android:layout_alignStart="@+id/numB"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/numB"
+        android:layout_alignEnd="@+id/numB"
+        android:id="@+id/result" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn1"
+        android:textSize="30sp"
+        android:layout_below="@+id/result"
+        android:layout_alignLeft="@+id/result"
+        android:layout_alignStart="@+id/result"
+        android:layout_marginTop="36dp"
+        android:id="@+id/btnadd" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/btn2"
+        android:layout_alignBaseline="@+id/btnadd"
+        android:layout_alignBottom="@+id/btnadd"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnsubtract" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/btn3"
+        android:layout_alignBaseline="@+id/btnsubtract"
+        android:layout_alignBottom="@+id/btnsubtract"
+        android:layout_alignRight="@+id/result"
+        android:layout_alignEnd="@+id/result"
+        android:id="@+id/btnclear" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn4"
+        android:textSize="30sp"
+        android:layout_below="@+id/btnadd"
+        android:layout_alignLeft="@+id/btnadd"
+        android:layout_alignStart="@+id/btnadd"
+        android:layout_marginTop="19dp"
+        android:id="@+id/btnmultiply" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/btn5"
+        android:id="@+id/btndivide"
+        android:layout_alignBaseline="@+id/btnmultiply"
+        android:layout_alignBottom="@+id/btnmultiply"
+        android:layout_alignLeft="@+id/btnsubtract"
+        android:layout_alignStart="@+id/btnsubtract" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/btn6"
+        android:id="@+id/btnexit"
+        android:layout_alignBaseline="@+id/btndivide"
+        android:layout_alignBottom="@+id/btndivide"
+        android:layout_alignLeft="@+id/btnclear"
+        android:layout_alignStart="@+id/btnclear" />
+
+</RelativeLayout>

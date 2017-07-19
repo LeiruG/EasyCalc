@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EasyCalc</string>
+    <string name="boxA">First Number</string>
+    <string name="boxB">Second Number</string>
+    <string name="result">0</string>
+    <string name="btn1">+</string>
+    <string name="btn2">-</string>
+    <string name="btn3">C</string>
+    <string name="btn4">X</string>
+    <string name="btn5">/</string>
+    <string name="btn6">EXIT</string>
+</resources>
